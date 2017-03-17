@@ -26,6 +26,6 @@ tmux -V
 # 配置
 cd
 yum install -y git
-$ git clone https://github.com/liu2lin600/.tmux.git
-$ ln -s -f .tmux/.tmux.conf
-$ cp .tmux/.tmux.conf.local .
+git clone https://github.com/liu2lin600/.tmux.git
+ln -s -f .tmux/.tmux.conf
+cp .tmux/.tmux.conf.local .
