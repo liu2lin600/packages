@@ -18,9 +18,7 @@ CFLAGS="-I/tmp/libevent/include" LDFLAGS="-L/tmp/libevent/lib" ./configure --pre
 make && make install
 
 # 环境变量
-touch /etc/profile.d/tmux.sh
-echo 'export PATH=/usr/local/tmux/bin:$PATH'>/etc/profile.d/tmux.sh
-. /etc/profile.d/tmux.sh
+ln -s /usr/local/tmux/bin/tmux /usr/bin/
 tmux -V
 
 # 配置
